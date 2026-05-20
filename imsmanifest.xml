@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="dr-levure-escape-room"
+          version="1.0"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <general>
+        <title>
+          <langstring xml:lang="fr">Dr. Levure — Escape Room Boulangerie</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="fr">Escape room pédagogique de 12 minutes sur la levure : anatomie cellulaire, bourgeonnement, types de levures et dosage. 4 énigmes interactives + bilan pédagogique.</langstring>
+        </description>
+        <keyword><langstring xml:lang="fr">levure</langstring></keyword>
+        <keyword><langstring xml:lang="fr">boulangerie</langstring></keyword>
+        <keyword><langstring xml:lang="fr">escape room</langstring></keyword>
+        <keyword><langstring xml:lang="fr">fermentation</langstring></keyword>
+      </general>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H12M00S</datetime>
+        </typicallearningtime>
+      </educational>
+    </lom>
+  </metadata>
+
+  <organizations default="dr-levure-org">
+    <organization identifier="dr-levure-org">
+      <title>Dr. Levure — Escape Room Boulangerie</title>
+      <item identifier="item-1" identifierref="resource-1">
+        <title>Dr. Levure — Module pédagogique</title>
+        <adlcp:masteryscore>60</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="resource-1"
+              type="webcontent"
+              adlcp:scormtype="sco"
+              href="index.html">
+      <file href="index.html"/>
+    </resource>
+  </resources>
+</manifest>
